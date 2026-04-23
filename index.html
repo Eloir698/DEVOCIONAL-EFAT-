@@ -1,35 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZPEZWPVP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X8ZPEZWPVP');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Maná para cada Amanhecer</title>
+    <title>Maná para cada Amanhecer - 365 Dias de Fé</title>
+    <meta name="description" content="365 dias para uma fé que move montanhas. O devocional diário para fortalecer seu espírito pela manhã.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --mana-blue: #0b1a2d; /* Azul Marinho Real */
+            --mana-gold: #c3964d; /* Dourado Profético */
+            --mana-accent: #e9c48a;
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(11, 26, 45, 0.8), rgba(11, 26, 45, 0.95)), url('capa.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold-border { border: 1px solid var(--mana-gold); }
+        .gold-gradient { background: linear-gradient(135deg, var(--mana-gold), var(--mana-accent)); }
+        
+        .image-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .image-card:hover { transform: scale(1.02); box-shadow: 0 30px 60px -12px rgba(0,0,0,0.25); }
+
+        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
-<body class="bg-zinc-50 font-['Inter'] text-zinc-800 p-8">
-    <div class="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-sm">
-        <h1 class="text-3xl font-bold mb-8 text-[#0b1a2d]">Política de Privacidade</h1>
-        
-        <p class="mb-4">A sua privacidade é importante para nós. É política do <strong>Maná para cada Amanhecer</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site.</p>
+<body class="selection:bg-[#c3964d] selection:text-white overflow-x-hidden">
 
-        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">1. Coleta de Informações</h2>
-        <p class="mb-4">Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
-
-        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">2. Uso de Dados</h2>
-        <p class="mb-4">Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
-
-        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">3. Links Externos</h2>
-        <p class="mb-4">O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites.</p>
-
-        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">4. Compromisso do Usuário</h2>
-        <p class="mb-4">O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o <strong>Maná para cada Amanhecer</strong> oferece.</p>
-
-        <p class="mt-12 text-zinc-400 text-sm italic">Esta política é efetiva a partir de Abril/2026.</p>
-        
-        <div class="mt-8">
-            <a href="index.html" class="text-[#c3964d] font-bold hover:underline">← Voltar para o Início</a>
+    <!-- Header fixo -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0b1a2d]/90 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-mana-gold rounded-full flex items-center justify-center text-[#0b1a2d] font-bold text-xl">M</div>
+                <span class="text-white font-serif font-bold tracking-[0.2em] uppercase text-sm md:text-lg">Maná <span class="text-mana-gold">Digital</span></span>
+            </div>
+            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="bg-mana-gold hover:bg-mana-accent text-[#0b1a2d] px-6 py-2 rounded-full font-bold text-xs uppercase transition-all">
+                Garantir Maná
+            </a>
         </div>
-    </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="min-h-screen flex items-center justify-center hero-bg text-center px-6 pt-20">
+        <div class="max-w-4xl relative">
+            <div class="inline-block gold-border px-6 py-1 rounded-full text-mana-gold text-[10px] tracking-[0.5em] uppercase mb-10">Lançamento Exclusivo</div>
+            <h1 class="text-6xl md:text-[120px] font-serif font-black text-white leading-none mb-4">MANÁ</h1>
+            <h2 class="text-3xl md:text-6xl font-serif italic text-mana-gold mb-12">para cada Amanhecer</h2>
+            <p class="text-white/60 text-sm md:text-xl font-medium tracking-[0.3em] uppercase mb-16 px-4">365 dias para uma fé que move montanhas</p>
+            
+            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="inline-flex items-center gap-4 gold-gradient text-[#0b1a2d] px-12 py-7 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-[0_20px_50px_rgba(195,150,77,0.3)]">
+                RECEBER AGORA <i data-lucide="sun"></i>
+            </a>
+            
+            <p class="mt-10 text-white/30 italic font-serif">Originalmente escrito por Eloir Anacleto de Souza</p>
+        </div>
+    </section>
+
+    <!-- Galeria da Jornada Profética -->
+    <section class="py-32 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 max-w-2xl mx-auto">
+                <i data-lucide="scroll" class="w-12 h-12 text-mana-gold mx-auto mb-6"></i>
+                <h2 class="text-4xl md:text-6xl font-serif font-black text-[#0b1a2d] italic leading-tight">Sua nova história começa nas primeiras horas.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Foto 1: Caminho -->
+                <div class="image-card rounded-[40px] overflow-hidden bg-[#f9f9f9]">
+                    <div class="h-[400px] overflow-hidden">
+                        <img src="foto1.png" alt="O Caminho" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-10">
+                        <h4 class="font-serif font-bold text-2xl mb-4 text-[#0b1a2d]">Sua Jornada</h4>
+                        <p class="text-zinc-500 italic leading-relaxed">"Onde seus pés pisarem, ali haverá uma palavra de vitória."</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2: Janela/Montanha -->
+                <div class="image-card rounded-[40px] overflow-hidden bg-[#f9f9f9] md:-translate-y-12">
+                    <div class="h-[400px] overflow-hidden">
+                        <img src="foto2.png" alt="A Montanha" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-10">
+                        <h4 class="font-serif font-bold text-2xl mb-4 text-[#0b1a2d]">Fé que Move</h4>
+                        <p class="text-zinc-500 italic leading-relaxed">"O que parece impossível aos seus olhos é apenas o palco do seu milagre."</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3: Viúva/Azeite -->
+                <div class="image-card rounded-[40px] overflow-hidden bg-[#f9f9f9]">
+                    <div class="h-[400px] overflow-hidden">
+                        <img src="foto3.png" alt="A Multiplicação" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-10">
+                        <h4 class="font-serif font-bold text-2xl mb-4 text-[#0b1a2d]">A Multiplicação</h4>
+                        <p class="text-zinc-500 italic leading-relaxed">"Quando você entrega o pouco que tem, Ele faz transbordar o que você precisa."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque da Capa -->
+    <section class="py-32 bg-[#0b1a2d] text-white px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="relative flex justify-center order-2 lg:order-1">
+                <div class="absolute inset-0 bg-mana-gold/20 blur-[120px] rounded-full"></div>
+                <img src="capa.png" alt="Devocional Maná" class="relative z-10 w-full max-w-md rounded-[50px] shadow-2xl floating border border-white/10">
+            </div>
+            <div class="space-y-12 order-1 lg:order-2">
+                <div class="space-y-6">
+                    <h3 class="text-5xl md:text-7xl font-serif font-black leading-tight italic">O alimento <span class="text-mana-gold">diário</span> do seu espírito.</h3>
+                    <p class="text-white/60 text-xl leading-relaxed italic font-serif">
+                        O Maná não é apenas leitura, é ativação. Durante 365 dias, você será conduzido por passagens que despertarão a autoridade que já habita em você.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 group hover:bg-white/10 transition-all">
+                        <i data-lucide="check" class="text-mana-gold mb-4 group-hover:scale-125 transition-transform"></i>
+                        <h5 class="font-bold uppercase tracking-widest text-sm">Acesso Vitalício</h5>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-mana-gold/30 group hover:bg-white/10 transition-all">
+                        <i data-lucide="smartphone" class="text-mana-gold mb-4 group-hover:scale-125 transition-transform"></i>
+                        <h5 class="font-bold uppercase tracking-widest text-sm">App Digital APK</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preço -->
+    <section class="py-40 px-6 bg-white text-center">
+        <div class="max-w-3xl mx-auto bg-zinc-50 border border-zinc-100 p-16 md:p-32 rounded-[80px] shadow-sm relative">
+            <h4 class="text-[#0b1a2d] font-serif italic text-3xl mb-8 leading-relaxed">Não deixe sua fé morrer por falta de alimento.</h4>
+            
+            <div class="mb-16">
+                <span class="text-zinc-300 line-through text-2xl uppercase tracking-[0.2em]">De R$ 197,00</span>
+                <div class="text-[#0b1a2d] text-8xl md:text-[150px] font-serif font-black mt-4">R$ 47</div>
+                <div class="text-mana-gold font-bold uppercase tracking-widest text-sm mt-4 italic">Pagamento Único</div>
+            </div>
+            
+            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="gold-gradient w-full py-8 md:py-10 rounded-3xl font-black text-2xl text-[#0b1a2d] shadow-xl hover:scale-105 transition-all block text-center">
+                GARANTIR MEU ACESSO AGORA
+            </a>
+            
+            <div class="flex justify-center gap-10 mt-16 opacity-30">
+                <i data-lucide="shield-check"></i>
+                <i data-lucide="credit-card"></i>
+                <i data-lucide="zap"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-24 bg-[#0b1a2d] px-6 text-center">
+        <div class="font-serif font-black text-3xl tracking-[0.8em] text-white/10 uppercase mb-8">MANÁ DIGITAL</div>
+        <div class="flex justify-center gap-10 mb-12 text-[10px] uppercase tracking-widest font-bold text-white/40">
+            <a href="politica.html" class="hover:text-mana-gold transition-colors">Segurança e Privacidade</a>
+            <a href="#" class="hover:text-mana-gold transition-colors">Suporte ao Devocional</a>
+        </div>
+        <p class="text-[10px] text-white/20 italic max-w-md mx-auto leading-loose">
+            © 2026 - Maná para cada Amanhecer. Uma obra criada com propósito para fortalecer lares em todo Brasil. Escrito por Eloir Anacleto de Souza.
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
