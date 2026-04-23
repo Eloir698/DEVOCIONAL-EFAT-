@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Maná para cada Amanhecer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-50 font-['Inter'] text-zinc-800 p-8">
+    <div class="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-sm">
+        <h1 class="text-3xl font-bold mb-8 text-[#0b1a2d]">Política de Privacidade</h1>
+        
+        <p class="mb-4">A sua privacidade é importante para nós. É política do <strong>Maná para cada Amanhecer</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">1. Coleta de Informações</h2>
+        <p class="mb-4">Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">2. Uso de Dados</h2>
+        <p class="mb-4">Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">3. Links Externos</h2>
+        <p class="mb-4">O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites.</p>
+
+        <h2 class="text-xl font-bold mt-8 mb-4 text-[#0b1a2d]">4. Compromisso do Usuário</h2>
+        <p class="mb-4">O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o <strong>Maná para cada Amanhecer</strong> oferece.</p>
+
+        <p class="mt-12 text-zinc-400 text-sm italic">Esta política é efetiva a partir de Abril/2026.</p>
+        
+        <div class="mt-8">
+            <a href="index.html" class="text-[#c3964d] font-bold hover:underline">← Voltar para o Início</a>
+        </div>
+    </div>
+</body>
+</html>
