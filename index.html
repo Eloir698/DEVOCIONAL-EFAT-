@@ -12,7 +12,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EFATÁ - 365 Dias para uma Fé que Move Montanhas</title>
+    <!-- SEO: Fazendo o Google encontrar o novo nome -->
+    <title>Maná para cada Amanhecer - Devocional Diário</title>
+    <meta name="description" content="365 dias para uma fé que move montanhas. O devocional diário para fortalecer seu espírito.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -20,113 +23,134 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        .text-gold-gradient {
-            background: linear-gradient(180deg, #f3e5ab 0%, #d4af37 50%, #b8860b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .btn-gold {
-            background: linear-gradient(to right, #d4af37, #f1d279, #d4af37);
-            color: #1a2a44;
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        .text-mana-blue { color: #1e3a61; } /* Tom de azul do título da capa */
+        .text-mana-gold { color: #c09247; } /* Tom de dourado do manuscrito */
+        .bg-mana-blue { background-color: #1e3a61; }
+        .bg-mana-gold { background: linear-gradient(to right, #c09247, #e5c185, #c09247); }
+        .border-mana-gold { border-color: #c09247; }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(30, 58, 97, 0.8), rgba(30, 58, 97, 0.95)), url('capa.png');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-<body class="selection:bg-[#d4af37] selection:text-white overflow-x-hidden">
+<body class="selection:bg-[#c09247] selection:text-white overflow-x-hidden">
 
     <!-- Nav -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1a2a44]/80 backdrop-blur-md px-6 py-4 border-b border-white/10">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1e3a61]/90 backdrop-blur-md px-6 py-4 border-b border-white/10">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-br from-[#d4af37] to-[#b8860b] rounded-lg flex items-center justify-center text-[#1a2a44] font-serif font-bold shadow-lg">E</div>
-                <span class="text-xl font-serif font-bold tracking-widest text-[#d4af37]">EFATÁ</span>
+                <div class="w-8 h-8 bg-mana-gold rounded-full flex items-center justify-center text-[#1e3a61] font-serif font-bold">M</div>
+                <span class="text-lg md:text-xl font-serif font-bold tracking-widest text-white uppercase">Maná <span class="text-[#c09247]">Digital</span></span>
             </div>
-            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="px-6 py-2 rounded-full border border-[#d4af37] text-[#d4af37] font-bold text-sm hover:bg-[#d4af37] hover:text-[#1a2a44] transition-all">
-                Garantir Acesso
+            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="px-5 py-2 rounded-full border border-[#c09247] text-[#c09247] font-bold text-xs uppercase hover:bg-[#c09247] hover:text-white transition-all">
+                Acesso On-line
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-[#1a2a44]">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#1a2a44] via-[#243b55] to-[#1a2a44] z-0"></div>
-        <div class="max-w-5xl mx-auto text-center relative z-20 px-6">
-            <h1 class="text-7xl md:text-[130px] font-serif font-bold leading-none mb-6 tracking-tighter text-gold-gradient drop-shadow-2xl">EFATÁ</h1>
-            <p class="text-lg md:text-2xl font-serif font-medium text-white tracking-[0.2em] uppercase mb-12">365 dias para uma fé que move montanhas</p>
+    <section class="relative min-h-screen flex items-center justify-center pt-24 hero-gradient text-center px-6">
+        <div class="relative z-20 max-w-5xl mx-auto">
+            <div class="inline-block px-4 py-1 border border-[#c09247] text-[#c09247] rounded-full text-[10px] uppercase tracking-[0.4em] mb-6">Devocional Diário</div>
+            <h1 class="text-6xl md:text-[100px] font-serif font-bold leading-none mb-4 text-white">MANÁ</h1>
+            <h2 class="text-3xl md:text-6xl font-serif italic text-[#c09247] mb-8">para cada Amanhecer</h2>
+            <p class="text-sm md:text-xl font-medium text-white/80 tracking-[0.3em] uppercase mb-12">365 dias para uma fé que move montanhas</p>
             
-            <p class="text-xl md:text-3xl text-white/90 font-serif leading-relaxed max-w-3xl mx-auto mb-16 italic">
-                "Abandone o deserto espiritual. O EFATÁ não é apenas um app, é o caminho profético para que seu espirito seja guiado a restauração."
-            </p>
-
             <div class="flex flex-col items-center gap-8">
-                <a href="https://pay.kiwify.com.br/LGCzYcQ" class="w-full sm:w-auto px-20 py-8 btn-gold rounded-2xl font-black text-2xl hover:scale-105 transition-all flex items-center justify-center gap-4 group">
-                    QUERO MOVER MONTANHAS <i data-lucide="arrow-right" class="w-8 h-8"></i>
+                <a href="https://pay.kiwify.com.br/LGCzYcQ" class="w-full sm:w-auto px-12 py-6 bg-mana-gold text-[#1e3a61] rounded-xl font-black text-xl hover:scale-105 transition-all flex items-center justify-center gap-4 shadow-2xl">
+                    RECEBER MEU MANÁ <i data-lucide="sun" class="w-6 h-6"></i>
                 </a>
-                <div class="text-[#d4af37]/60 font-serif italic text-lg border-b border-[#d4af37]/20 pb-2">Por Eloir Anacleto de Souza</div>
+                <div class="text-white/40 font-serif italic text-sm">Escrito por Eloir Anacleto de Souza</div>
             </div>
         </div>
     </section>
 
-    <!-- Miracle Proof -->
-    <section class="py-32 px-6 bg-white">
+    <!-- Argumentos (Ícones da Capa) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
+            <div class="text-center group">
+                <div class="w-16 h-16 mx-auto mb-4 border border-mana-gold rounded-full flex items-center justify-center text-mana-gold group-hover:bg-mana-gold group-hover:text-white transition-all">
+                    <i data-lucide="book-open"></i>
+                </div>
+                <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#1e3a61]">Palavra que Ilumina</h4>
+            </div>
+            <div class="text-center group">
+                <div class="w-16 h-16 mx-auto mb-4 border border-mana-gold rounded-full flex items-center justify-center text-mana-gold group-hover:bg-mana-gold group-hover:text-white transition-all">
+                    <i data-lucide="heart"></i>
+                </div>
+                <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#1e3a61]">Fortalecimento Diário</h4>
+            </div>
+            <div class="text-center group">
+                <div class="w-16 h-16 mx-auto mb-4 border border-mana-gold rounded-full flex items-center justify-center text-mana-gold group-hover:bg-mana-gold group-hover:text-white transition-all">
+                    <i data-lucide="mountain"></i>
+                </div>
+                <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#1e3a61]">Fé Inabalável</h4>
+            </div>
+            <div class="text-center group">
+                <div class="w-16 h-16 mx-auto mb-4 border border-mana-gold rounded-full flex items-center justify-center text-mana-gold group-hover:bg-mana-gold group-hover:text-white transition-all">
+                    <i data-lucide="sunrise"></i>
+                </div>
+                <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#1e3a61]">Um Novo Milagre</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capa e Conteúdo -->
+    <section class="py-32 px-6 bg-[#f8faff]">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div class="relative">
-                <div class="absolute inset-0 bg-[#d4af37]/10 rounded-[40px] blur-3xl"></div>
-                <div class="relative aspect-[3/4] bg-[#1a2a44] rounded-[40px] overflow-hidden shadow-2xl border-2 border-[#d4af37]/20 text-center">
-                   <img src="capa.png" alt="EFATÁ" class="w-full h-full object-cover">
+            <div class="relative order-2 md:order-1">
+                <div class="relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
+                   <img src="capa.png" alt="Maná para cada Amanhecer" class="w-full h-full object-cover">
                 </div>
             </div>
-            <div class="space-y-10">
-                <h2 class="text-5xl md:text-7xl font-serif font-bold text-[#1a2a44] leading-tight text-center md:text-left">O comando para o seu <span class="text-[#d4af37]">Novo Tempo.</span></h2>
-                <p class="text-zinc-600 text-2xl font-serif leading-relaxed italic text-center md:text-left">
-                    Durante 365 dias, <strong>EFATÁ</strong> conduzirá você por passagens poderosas que despertarão a autoridade que já habita em você. Não é apenas leitura é ativação.
+            <div class="space-y-10 order-1 md:order-2">
+                <h3 class="text-4xl md:text-6xl font-serif font-bold text-[#1e3a61] leading-tight text-center md:text-left">
+                    Seu alimento espiritual <span class="text-[#c09247]">todas as manhãs.</span>
+                </h3>
+                <p class="text-zinc-600 text-xl font-serif leading-relaxed italic text-center md:text-left">
+                    O <strong>Maná para cada Amanhecer</strong> não é apenas uma leitura. É uma ativação espiritual para que você comece o dia com a autoridade necessária para vencer qualquer gigante.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6">
-                    <div class="p-8 bg-[#f8faff] rounded-3xl border border-[#d4af37]/20 shadow-sm text-center">
-                        <i data-lucide="smartphone" class="w-10 h-10 text-[#d4af37] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-[#1a2a44] font-serif text-xl mb-2">App em APK</h4>
-                        <p class="text-sm text-zinc-500 italic">Instalação direta no Android.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-[#1e3a61] font-bold">
+                        <i data-lucide="check-circle" class="text-mana-gold"></i> 365 Mensagens de Fé
                     </div>
-                    <div class="p-8 bg-[#1a2a44] rounded-3xl shadow-2xl border border-[#d4af37]/30 text-center">
-                        <i data-lucide="wifi-off" class="w-10 h-10 text-[#d4af37] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-[#d4af37] font-serif text-xl mb-2 text-center">100% OFF-LINE</h4>
-                        <p class="text-sm text-white/70 italic text-center">Funciona sem internet.</p>
+                    <div class="flex items-center gap-4 text-[#1e3a61] font-bold">
+                        <i data-lucide="check-circle" class="text-mana-gold"></i> Aplicativo Offline (APK)
+                    </div>
+                    <div class="flex items-center gap-4 text-[#1e3a61] font-bold">
+                        <i data-lucide="check-circle" class="text-mana-gold"></i> Acesso Vitalício
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Oferta -->
-    <section class="py-32 px-6 bg-[#f8faff] flex justify-center">
-        <div class="max-w-4xl w-full text-center">
-            <div class="bg-white p-12 md:p-24 rounded-[60px] border-4 border-[#d4af37]/20 shadow-2xl">
-                <div class="mb-12">
-                    <span class="text-zinc-300 line-through text-3xl font-serif font-bold uppercase">De R$ 197,00</span>
-                    <div class="text-[#d4af37] text-8xl md:text-[130px] font-serif font-bold mt-4">R$ 47,00</div>
-                    <p class="text-[#1a2a44]/60 font-bold uppercase tracking-[0.4em] text-sm mt-4">Parcela Única - Acesso Vitalício</p>
-                </div>
-                <a href="https://pay.kiwify.com.br/LGCzYcQ" class="w-full btn-gold font-black py-10 rounded-[32px] text-xl md:text-3xl hover:brightness-110 transition-all flex items-center justify-center gap-4">
-                    LIBERAR MEU ACESSO AGORA <i data-lucide="chevron-right" class="w-10 h-10 text-center"></i>
-                </a>
+    <!-- Oferta Final -->
+    <section class="py-32 px-6 bg-white text-center">
+        <div class="max-w-3xl mx-auto bg-[#1e3a61] p-12 md:p-24 rounded-[60px] shadow-2xl text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10"><i data-lucide="quote" class="w-24 h-24"></i></div>
+            <h4 class="text-2xl font-serif italic mb-8">Comece sua jornada hoje</h4>
+            <div class="mb-12">
+                <span class="text-white/30 line-through text-2xl uppercase">De R$ 197,00</span>
+                <div class="text-[#c09247] text-7xl md:text-9xl font-serif font-bold mt-2">R$ 47,00</div>
             </div>
+            <a href="https://pay.kiwify.com.br/LGCzYcQ" class="w-full bg-mana-gold text-[#1e3a61] font-black py-8 rounded-2xl text-xl hover:brightness-110 transition-all flex items-center justify-center gap-4">
+                QUERO MEU MANÁ AGORA
+            </a>
+            <p class="mt-8 text-[10px] uppercase tracking-[0.3em] text-white/40">Pagamento Único • Sem Mensalidade</p>
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="py-24 px-6 bg-[#1a2a44] text-white/40 text-center border-t border-white/5">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-3xl font-serif font-bold tracking-[0.4em] text-[#d4af37] mb-6 uppercase">EFATÁ</div>
-            <p class="text-white/60 font-serif italic mb-12 text-xl text-center">Por Eloir Anacleto de Souza</p>
-            
-            <div class="flex justify-center gap-8 mb-12 text-xs uppercase tracking-widest">
-                <a href="politica.html" class="hover:text-[#d4af37] transition-colors">Política de Privacidade</a>
-            </div>
-
-            <p class="text-[10px] italic border-t border-white/10 pt-8 mt-8 text-center uppercase tracking-widest">
-                © 2024 EFATÁ - Todos os direitos reservados.
-            </p>
+    <footer class="py-20 px-6 bg-white text-[#1e3a61]/40 text-center border-t border-zinc-100">
+        <div class="text-2xl font-serif font-bold tracking-[0.4em] mb-4 uppercase">MANÁ DIGITAL</div>
+        <div class="flex justify-center gap-8 mb-8 text-[10px] uppercase tracking-widest">
+            <a href="politica.html" class="hover:text-mana-gold">Privacidade</a>
+            <a href="#" class="hover:text-mana-gold">Termos</a>
         </div>
+        <p class="text-[10px] italic">© 2024 - Maná para cada Amanhecer. Todos os direitos reservados.</p>
     </footer>
 
     <script>
